@@ -1,0 +1,116 @@
+/* reset básico para todos os tipos de navegadores*/
+* {
+    margin: 100;
+    padding: 00;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+/* Fonte especial*/
+
+@font-face {
+    font-family: "Raleway Especial";
+    src: local(Raleway), url(../fonts/Raleway-Bold.ttf);
+}
+
+
+* {
+font-family: "Raleway Especial"
+}
+
+
+/* conteiner */
+.container  {
+    width: 30%;
+    height: 650px;
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: 10%;
+    font-family: Arial;
+    font-size: 16px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    box-shadow: 0px 5px 5px  rgba(0, 0, 0, 0.1);
+    background-color:LightSkyBlue;
+    
+}
+    @media (min-width: 728px) {
+        .container {
+            max-width: 728px;
+            padding: 0;
+        }
+    }
+
+/* linha */
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+    .row:before,
+    .row:after {
+        content: "";
+        display: table;
+    }
+    .row:after {
+        clear: both;
+    }
+
+/* coluna */
+.col {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 25px;
+    padding-right: 35px;
+    width: 100%;
+    margin-right: -4px;
+    *zoom: 1;
+    *display: inline;
+}
+    /* Uma coluna */
+    @media (min-width: 728px) {
+        .col-3 {
+            width: 100%;
+        }
+    }
+
+    
+
+/* Barra lateral */
+
+.estilo1 {
+    padding: 6mm;
+    xwidth: 410px;
+    background-color: steelblue; 
+    margin: 0px -28px;
+    margin-left: -5mm;
+    margin-top: -4mm;
+    display: block;
+}
+
+
+.estilo3 {
+  
+    background: #fff;
+    padding: 15px;
+    xtext-align: left;
+    margin: -10px 10px;
+    word-spacing: 40px;
+    display: flex;
+    flex-flow: column wrap; 
+    width: 200px;
+    background-color: LightSkyBlue;
+    display: block;   
+    
+}
+
+ 
+li:hover {
+    background-color: yellow;
+    display: block;
+}
+
+
+
